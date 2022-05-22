@@ -10,7 +10,6 @@ import java.util.Random;
  * 인덱스는 객체를 검색, 삭제 시 사용한다.
  * List컬렉션은 객체를 저장하는 것이 아닌 객체의번지를 참조한다.
  * 동일한 객체를 저장할 수 있으며 이 경우에는 동일한 객체의 번지를 참조, null도 저장가능, 중복적인 값도 저장 가능
- * 객체 검색, 맨 마지막 인덱스에 객체 추가에 좋은 성능을 발휘함
  */
 public class JCF_List_ArrayList {
 
@@ -20,6 +19,7 @@ public class JCF_List_ArrayList {
 		 * 데이터 타입은 일반 변수 타입이 아닌 Wrapper class 타입으로 지정
 		 * ArrayList와 배열의 차이는 둘 다 인덱스로 객체를 관리하지만 ArrayList는 크기가 동적으로 늘어난다. 
 		 * 배열은 크기를 먼저 지정하고 사용해야 하며 크기가 정해져 있다.
+		 * 객체 검색, 맨 마지막 인덱스에 객체 추가에 좋은 성능을 발휘함
 		 */
 		List<Integer> list = new ArrayList<>();
 		
