@@ -4,6 +4,9 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
+import java_else.ReflectionTest.Tool;
+
+
 /*
  * 리플렉션은 구체적인 클래스 타입을 알지 못하더라도 그 클래스의 메서드, 타입, 변수들에 접근할 수 있도록 해주는 자바 API이다.
  * 컴파일 시간이 아닌 실행 시간에 동적으로 특정 클래스의 정보를 추출할 수 있는 프로그래밍 기법이다.
@@ -76,7 +79,6 @@ public class Sample_Reflection {
 				e.printStackTrace();
 			}
 		*/
-		
 		 Class refClass = null;
 
 	      try {
@@ -118,7 +120,6 @@ public class Sample_Reflection {
 	      }
 	      
 	      /*변수 정보 가져오기*/
-	       /*Class 클래스에서 제공하는 메서드*/
 		   /*  getFields() : public으로 선언된 변수 목록을 Field 타입의 배열로 반환한다.
 		   /*  getDeclaredFields() : 해당 클래스에서 정의 된 모든 변수 목록을 배열의 형태로 반환한다.*/
 	      System.out.println("------------------getFields() 메서드------------------");
@@ -134,6 +135,7 @@ public class Sample_Reflection {
 	      }
 	      //ReflectionTest 클래스에 선언된 변수들은 전부 private이었기 때문에 getDeclaredFields() 메서드는 모든 변수의 정보를 추출하지만,
 	      //getFields() 메서드는 아무것도 추출해내지 못하는 것을 볼 수 있다.
+	      
 	}
 
 }
