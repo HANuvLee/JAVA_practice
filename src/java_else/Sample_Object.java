@@ -27,7 +27,7 @@ class Student{
 	public int hashCode() { //두 객체가 동일한 객체인지 비교 (동일성)
 		final int prime = 31;
 		int result = 1;
-		result = prime*result+ ((name == null) ? 0 : name.hashCode());
+		result = prime*result+ ((number == null) ? 0 : number.hashCode());
 		return result;
 	}
 	@Override
